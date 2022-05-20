@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../images/2.jpg");
+  background-size: 100vw 100vh;
+}
+button{
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.infoLabel {
+  display: flex;
+  align-items: center;
+  background-color: rgba(64, 158, 10, 0.712);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+h3,
+span,
+.pauseButton {
+  font-family: "Skranji", cursive;
+  font-weight: lighter;
+}
+h3 {
+  color: #fffb00;
+}
+span {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.pauseButton {
+  padding: 5px 20px;
+  border: none;
+  font-size: 18px;
+  background-color: rgb(141, 7, 7);
+  color: whitesmoke;
+}
+
+.basketContainer {
+  position: absolute;
+  align-self: flex-start;
+  justify-self: flex-start;
+  bottom: 0%;
+  left: 0%;
+}
+
+.basketContainer > img {
+  width: 200px;
+  height: auto;
+}
+
+.timer {
+  color: rgb(255, 0, 0);
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.815);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupGameEnded {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.winLoseImage {
+  width: 40%;
+}
+
+/* ////////////////////////////// */
+.exitButton {
+  border: none;
+  font-weight: bold;
+  font-family: "Skranji", cursive;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 20px;
+  width: 200px;
+  padding: 10px 50px;
+  background-color: #ffa600;
+  color: rgb(245, 245, 245);
+  box-shadow: 0px 8px 0px 0px #6d4605;
+  text-shadow: 0px 2px 0px black;
+}
+.exitButton:hover,
+.exitButton:hover a {
+  box-shadow: none;
+  color: firebrick;
+  background-color: floralwhite;
+  text-shadow: none;
+}
+
+.popupMenu {
+  position: relative;
+  top: 30%;
+  z-index: 1;
+}

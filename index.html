@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catching Eggs Game</title>
+
+    <link rel="stylesheet" href="assets/css/indexStyling.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Catching Eggs</h1>
+        <form action="game.html" method="get">
+            <div>
+                <input type="text" name="name" placeholder="enter your name...">
+            </div>
+            <div class="wrongMsgLine" style="display: none;">
+                <span class="spanMessage"></span>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="play">
+                        <!-- in="sourceGraphic" -->
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="highContrastGraphic" />
+                        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <button type="submit" id="letsPlayBtn">
+                Let's Play
+                <span class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                </span>
+            </button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

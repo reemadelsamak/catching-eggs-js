@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play</title>
+    <link rel="stylesheet" href="assets/css/game.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class=" infoLabel">
+            <h3>Last Played: <span id="lastLogin"></span></h3>
+        </div>
+        <div class="infoLabel">
+            <h3>Player: </h3>
+            <span class="playerName"></span>
+        </div>
+        <div class="infoLabel">
+            <h3>Score: <span id="score">0</span></h3>
+        </div>
+        <div class="infoLabel">
+            <h3>Target: <span>10</span></h3>
+        </div>
+        <div class="infoLabel">
+            <h3>Timer: <span class="timer">20</span></h3>
+        </div>
+        <div class="infoLabel pauseButton">
+            <button class="pauseButton">Pause ■</button>
+        </div>
+        <!-- <div class="col-md-1 infoLabel">
+            <h3>Mute</h3>
+        </div> -->
+
+    
+    </div>
+
+    <!-- Basket Area -->
+    <div class="basketContainer">
+        <img src="assets/images/basket.png" alt="basket" class="basketImg">
+    </div>
+
+
+    <div id="popupMenu" class="overlay">
+        <div class="popupContent">
+            <button class="exitButton resumeButton">Resume</button>
+            <button class="exitButton"><a href="index.html">Exit</a></button>
+        </div>
+    </div>
+
+    <div id="gameEnded" class="overlay">
+        <div class="popupContent">
+            <img class=" winLoseImage" src="" alt="">
+            <button class="exitButton"><a href="index.html">Home</a></button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="server.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
